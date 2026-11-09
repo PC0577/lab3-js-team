@@ -7,4 +7,4 @@ const tablica = [
 
 console.log(tablica);
 console.table(tablica);
-
+tablica[tablica.length - 1] = 'Nowa wartość';
