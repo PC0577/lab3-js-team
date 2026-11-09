@@ -26,3 +26,5 @@ console.log(nowaDlugosc);
 
 document.write('<p>Tablica: ' + tablica.join(', '));
 document.write(' (elementów: ' + tablica.length + ')</p>');
+document.write('<p>Czy zawiera "Stan Lee": ' + tablica.includes('Stan Lee') + '</p>');
+document.write('pozycja "Stan Lee": ' + tablica.indexOf('Stan Lee') + '</p>');
