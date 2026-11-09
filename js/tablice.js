@@ -19,4 +19,10 @@ console.log(tablica.length)
 
 tablica[20] = 'daleko';
 console.log(tablica.length)
-console.log(tablica[15])
+ //undefined
+
+ const nowaDlugosc = tablica.unshift('nowy12', 'nowy13');
+console.log(nowaDlugosc);
+
+document.write('<p>Tablica: ' + tablica.join(', '));
+document.write(' (elementów: ' + tablica.length + ')</p>');
