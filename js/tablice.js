@@ -7,4 +7,4 @@ const tablica = [
 
 console.log(tablica);
 console.table(tablica);
-alert(tablica[0]);
+
