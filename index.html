@@ -135,7 +135,8 @@
 
 				<div id="skrypty">
 					<h3>Zadanie 1 - ładowanie skryptów</h3>
-					<!-- Osoba A: kod zadania 1 -->
+					<script defer src="js/paweł.js"></script>
+					<script defer src="js/powitanie.js"></script>
 				</div>
 
 				<div id="tablice">
@@ -152,7 +153,8 @@
 					<h3>Zadanie 5 - pętle, funkcje, zdarzenia</h3>
 					<!-- Osoba A: kod zadania 5 -->
 				</div>				
-					
+				
+				<p>document.write() nie nadaje się do skryptów ładowanych z defer lub async, ponieważ jest uruchamiany już po tym, jak przeglądarka sparsuje już dokument HTML. Wywołanie go w tym momencie powoduje całkowite wyczyszczenie obecnej strony i nadpisanie jej nową treścią.</p>	
 			</div>
 		</div>
 	</section>
