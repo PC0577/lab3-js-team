@@ -28,3 +28,33 @@ document.write('<p>Tablica: ' + tablica.join(', '));
 document.write(' (elementów: ' + tablica.length + ')</p>');
 document.write('<p>Czy zawiera "Stan Lee": ' + tablica.includes('Stan Lee') + '</p>');
 document.write('pozycja "Stan Lee": ' + tablica.indexOf('Stan Lee') + '</p>');
+
+const nowaTablica = [
+ 'Maroko',
+ 'Emiraty',
+ 'Oman'
+];
+
+document.write('<p>Pierwszy element to <strong>');
+document.write(nowaTablica[0] + '</strong></p>');
+document.write('<p>Ostatni element to <strong>');
+document.write(nowaTablica[nowaTablica.length - 1] + '</strong></p>');
+
+nowaTablica.unshift('Egipt');
+document.write('<p>Pierwszy element po dodaniu: <strong>');
+document.write(nowaTablica[0] + '</strong></p>');
+
+const usunietyZKoniec = nowaTablica.pop();
+const usunietyZPoczatku = nowaTablica.shift();
+
+document.write('<p>Usunięty z końca: ' + usunietyZKoniec + '</p>');
+document.write('<p>Usunięty z początku: ' + usunietyZPoczatku + '</p>');
+document.write('<p>Pozostałe elementy w tablicy: ' + nowaTablica.join(', ') + '</p>');
+
+const oceny = [
+ ['JavaScript', 5],
+ ['Git', 4],
+ ['HTML', 5]
+];
+
+document.write('<p>Nazwa drugiego elementu: ' + oceny[1][0] + ', Ocena: ' + oceny[1][1] + '</p>');
