@@ -77,90 +77,53 @@
 
 	<!-- Main container -->
 	<section id="main-page">
-		<div class="container">
-
-			<div class="jumbotron">
-				<h1>Języki wysokiego poziomu <br> w aplikacjach internetowych</h1>
-				<div class="row">
-					<div class="col-md-2" align="left">
-						<p>nazwisko:</p>
-					</div>
-					<div class="col-md-4">
-						<p>Kowalski</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-2" align="left">
-						<p>imię:</p>
-					</div>
-					<div class="col-md-4">
-						<p>Jan</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-2" align="left">
-						<p>grupa:</p>
-					</div>
-					<div class="col-md-4">
-						<p>1</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-2" align="left">
-						<p>email:</p>
-					</div>
-					<div class="col-md-4">
-						<p>999@student.ans-elblag.pl</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-2" align="left">
-						<p>nr indeksu:</p>
-					</div>
-					<div class="col-md-4">
-						<p>999</p>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-	</section>
-	<!-- /container -->
-
-	<section id="projekt1">
-		<div class="container">
-			<div class="jumbotron">
-				<h1>Projekt 1</h1>
-
-				<div id="skrypty">
-					<h3>Zadanie 1 - ładowanie skryptów</h3>
-					<script defer src="js/paweł.js"></script>
-					<script defer src="js/powitanie.js"></script>
-				</div>
-
-				<div id="tablice">
-					<h3>Zadania 2 i 3 - tablice</h3>
-					<script src="js/tablice.js"></script>
-					
-				</div>
-
-				<div id="dom">
-					<h3>Zadanie 4 - DOM</h3>
-					<p id="licznik"></p>
-					<ul id="lista"></ul>
-					<script src="js/dom.js" defer></script>
-				</div>
-
-				<div id="petle">
-					<h3>Zadanie 5 - pętle, funkcje, zdarzenia</h3>
-					<!-- Osoba A: kod zadania 5 -->
-				</div>				
-				
-				<p>document.write() nie nadaje się do skryptów ładowanych z defer lub async, ponieważ jest uruchamiany już po tym, jak przeglądarka sparsuje już dokument HTML. Wywołanie go w tym momencie powoduje całkowite wyczyszczenie obecnej strony i nadpisanie jej nową treścią.</p>	
-			</div>
-		</div>
-	</section>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Języki wysokiego poziomu <br> w aplikacjach internetowych</h1>
+            <div class="row">
+                <div class="col-md-2" align="left">
+                    <p>nazwisko:</p>
+                </div>
+                <div class="col-md-4">
+                    <p id="nazwisko">Kowalski</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2" align="left">
+                    <p>imię:</p>
+                </div>
+                <div class="col-md-4">
+                    <p id="imie">Jan</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2" align="left">
+                    <p>grupa:</p>
+                </div>
+                <div class="col-md-4">
+                    <p id="grupa">1</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2" align="left">
+                    <p>email:</p>
+                </div>
+                <div class="col-md-4">
+                    <p id="email">999@student.ans-elblag.pl</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2" align="left">
+                    <p>nr indeksu:</p>
+                </div>
+                <div class="col-md-4">
+                    <p id="indeks">999</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/dane.js" defer></script>
+</section>
 
 
 	<section id="projekt2">
