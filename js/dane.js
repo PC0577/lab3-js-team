@@ -19,10 +19,12 @@ for (const element of nowaTablica) {
     akapit.textContent += `${element} ma ${policzZnaki(element)} znaków.\n`;
 }
 
-document.getElementById('pokazDane').addEventListener('click', function() {
+function pokazDane() {
     const dane = `Nazwisko: ${document.getElementById('nazwisko').textContent}\nImię: ${document.getElementById('imie').textContent}\nGrupa: ${document.getElementById('grupa').textContent}\nEmail: ${document.getElementById('email').textContent}\nIndeks: ${document.getElementById('indeks').textContent}`;
     alert(dane);
-});
+}
+
+document.getElementById('pokazDane').addEventListener('click', pokazDane);
 
 let licznik = 0;
 
