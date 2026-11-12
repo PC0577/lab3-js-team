@@ -24,3 +24,7 @@ if (Number(answer) === question[1]) {
 } else {
  alert('Błąd. Prawidłowa odpowiedź to ' + question[1]);
 }}
+
+const wynik = document.createElement('p');
+wynik.textContent = `Twój wynik: ${score}/${questions.length}`;
+document.getElementById('wynik').append(wynik)
