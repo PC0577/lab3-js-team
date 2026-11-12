@@ -12,3 +12,18 @@ const imagesCounterInner = "[Liczba obrazków na stronie: " + imagesCounter + "]
 const linksCounterInner = "[Liczba linków na stronie: " + linksCounter + "]"; 
 const paragraphsCounterInner = "[Liczba akapitów <p> w sekcji projekt1: " + paragraphsCounter + "]"; 
 document.getElementById('licznik').append(formsCounterInner, imagesCounterInner, linksCounterInner, paragraphsCounterInner);
+
+
+const h3Element = document.querySelector('#dom h3');
+h3Element.textContent = 'Zadanie 4. DOM - Zmieniony nagłówek';
+h3Element.classList.add('text-success');
+
+
+const lista = document.getElementById('lista');
+const li1 = document.createElement('li');
+li1.textContent = `Liczba formularzy na stronie: ${formsCounter}`;
+const li2 = document.createElement('li');
+li2.textContent = `Liczba obrazków na stronie: ${imagesCounter}`;
+const li3 = document.createElement('li');
+li3.textContent = `Liczba linków na stronie: ${linksCounter}`;
+lista.append(li1, li2, li3);
