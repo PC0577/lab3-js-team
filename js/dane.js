@@ -5,7 +5,7 @@ const zespol = [
 const pola = ['nazwisko', 'imie', 'grupa', 'email', 'indeks'];
 
 for (let i = 0; i < pola.length; i++) {
-    document.getElementById(pola[i]).textContent = zespol[0][i] + ', ' + zespol[1][i];
+    document.getElementById(pola[i]).textContent = zespol[0][i];
 }
 
 function policzZnaki(tekst) {
