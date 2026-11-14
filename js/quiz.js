@@ -7,7 +7,9 @@ przyciskStart.addEventListener('click', function() {
      const questions = [
  ['Ile księżyców ma Mars?', 2],
  ['W którym roku była Bitwa pod Grunwaldem?', 1410],
- ['Kwadrat liczby urojonej i?', -1]
+ ['Kwadrat liczby urojonej i?', -1],
+ ['Ile kontynentów jest na Ziemi?', 7],
+ ['Ile dni ma rok przestępny?', 366]
 ];
 
 
